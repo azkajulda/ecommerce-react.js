@@ -1,0 +1,29 @@
+.footer {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer .footer_top {
+    padding-top: 145px;
+    padding-bottom: 129px;
+    background: #1F1F1F;
+}
+
+.footer .copy-right_text {
+    padding-bottom: 30px;
+    background: #000000;
+}
+
+.footer .copy-right_text .footer_border {
+    padding-bottom: 30px;
+}
+
+.footer .copy-right_text .copy_right {
+    font-size: 16px;
+    color: #919191;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+

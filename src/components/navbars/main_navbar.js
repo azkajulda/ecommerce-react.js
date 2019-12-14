@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {
     Collapse,
+    Button,
     Navbar,
     NavbarToggler,
     NavbarBrand,
@@ -14,6 +15,7 @@ import {
     NavbarText
   } from 'reactstrap';
   import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+  import './navbar.css'
 
 const Main_navbar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +24,7 @@ const Main_navbar = (props) => {
 
   return (
     <div>
-      <Navbar color="dark" dark expand="md">
+      <Navbar className="fixed" color="dark" dark expand="md">
         <NavbarBrand tag={Link} to="/">LTW Store</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -30,22 +32,12 @@ const Main_navbar = (props) => {
             <NavItem>
               <NavLink tag={Link} to="/">Home</NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Collection
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem tag={Link} to="/books">
-                  Books
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Others
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <NavItem>
+              <NavLink tag={Link} to="/books">Books Collection</NavLink>
+            </NavItem>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          <Button outline color="primary"><i className="fa fa-user-circle"> Login</i></Button>
+          {/* <NavbarText>Hi, Mohamad Azka Julda S</NavbarText> */}
         </Collapse>
       </Navbar>
     </div>

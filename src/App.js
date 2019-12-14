@@ -9,8 +9,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
 // Components
-import Landing_page_user from './view/user/Landing_page_user';
-import Books from './view/user/Books';
+import Landing_page_user from './view/user/landing_page_user/Landing_page_user';
+import Books from './view/user/books/Books';
 
 
 function App() {
