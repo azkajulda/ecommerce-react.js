@@ -36,7 +36,8 @@ const Main_navbar = (props) => {
               <NavLink tag={Link} to="/books">Books Collection</NavLink>
             </NavItem>
           </Nav>
-          <Button outline color="primary"><i className="fa fa-user-circle"> Login</i></Button>
+          <Button outline color="info" className="navbar-space"><i className="fa fa-shopping-cart"></i></Button>
+          <Button outline color="info"><i className="fa fa-user-circle"> Login</i></Button>
           {/* <NavbarText>Hi, Mohamad Azka Julda S</NavbarText> */}
         </Collapse>
       </Navbar>
