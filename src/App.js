@@ -12,6 +12,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import Landing_page_user from './view/user/landing_page_user/Landing_page_user';
 import Books from './view/user/books/Books';
 import Cart from './view/user/cart/Cart';
+import Book_detail from './view/user/book_detail/Book_detail';
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
           <Route exact path='/' component={Landing_page_user} />
           <Route path='/books' component={Books} />
           <Route path='/cart' component={Cart} />
-          <Route path='/book_detail' component={Books} />
+          <Route path='/book_detail' component={Book_detail} />
       </Switch>
     </Router>
   );
